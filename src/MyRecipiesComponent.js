@@ -8,9 +8,9 @@ function MyRecipiesComponent ({label, image, calories, ingredientLines}){
        <img className="tasty" src = {image} alt = 'pic'/></div>
 
 <ul  className="list">
-    {ingredientLines.map(ingredient => (
+    {ingredientLines.map((ingredient,index) => (
        
-        <li >✅ {ingredient}</li>
+        <li key={index} >✅ {ingredient}</li>
          ))}
 </ul>
 
